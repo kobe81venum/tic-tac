@@ -1,4 +1,3 @@
 #%%
-#elo 
-#sdsadasd
-# %%
+#main game section
+
