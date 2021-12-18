@@ -1,4 +1,3 @@
-#%%
 #main game section
 
 # %%
@@ -80,6 +79,24 @@ def gra():
                 print("\nKoniec Gry")
                 print(f"Wygrał gracz: {gracz}")
                 break
-            else:
+
+            if licznik == 9:
+                print("\nKoniec Gry")
                 print("remis")
+
+        if gracz == 'X':
+            gracz = 'O'
+        else:
+            gracz = 'X'
+
+    restart = input('grasz ponownie?/n(t/n')
+    if restart == 't' or restart == 'T':
+        for key in klawisze_gry:
+            plansza_do_gry[key] = ' '
+
+        gra()   #wywołanie rekurencyjne
+#superfunkcja
+if __name__ == '__main__': #dotyczy pakietów i pakowania do pakietu
+    gra()
+
 # %%
